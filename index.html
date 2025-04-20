@@ -10,15 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>esger_portfolio</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: 'Jetbrains Mono', 'Courier New', Courier, monospace;
             background-color: #0e1219;
             color: #ffffff;
             line-height: 1.8;
-            padding-top: 100px;
             --accent_rgb: 100, 255, 255;
             --accent: rgb(var(--accent_rgb));
+            overflow-x: hidden;
+            padding-top: 130px;
         }
 
         header {
@@ -55,7 +60,7 @@
             height: 0.3rem;
             background-color: var(--accent);
             margin-left: 3px;
-            animation: blink 1.6s steps(1) infinite;
+            animation: blink 1s linear infinite;
             transition: opacity 0.3s ease;
         }
 
@@ -75,12 +80,12 @@
 
         @keyframes blink {
 
-            0%,
+            40%,
             100% {
                 opacity: 1;
             }
 
-            50% {
+            50%, 90% {
                 opacity: 0;
             }
         }
@@ -90,7 +95,6 @@
             gap: 1.5rem;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 0.5rem;
             margin-right: 9vw;
         }
 
@@ -111,7 +115,7 @@
 
         main {
             max-width: 960px;
-            margin: 4rem auto;
+            margin: 0 auto;
             padding: 0 2rem;
             animation: fadeIn 1.5s ease;
         }
@@ -129,8 +133,9 @@
         }
 
         section {
-            margin-bottom: 5rem;
+            margin-bottom: 60px;
             padding: 2rem;
+            scroll-margin-top: 120px;
             border-radius: 0.5rem;
             background-color: #abd0fd05;
             transition: box-shadow 1s ease, transform 0.3s ease;
@@ -166,7 +171,7 @@
         }
 
         th {
-            background-color: #161b22;
+            background-color: #151c25;
         }
 
         th,
@@ -213,6 +218,15 @@
             table {
                 font-size: 0.7rem;
             }
+
+            body {
+                padding-top: 150px;
+            }
+
+            section {
+                margin-bottom: 40px;
+                scroll-margin-top: 150px;
+            }
         }
     </style>
     <script>
@@ -246,7 +260,7 @@
     <header>
         <h1>esger<span class="cursor"></span></h1>
         <nav>
-            <a href="#about_me">about_me</a>
+            <a href="#about_me">about</a>
             <a href="#ctf_achievements">ctf</a>
             <a href="#cp_achievements">cp</a>
             <a href="#my_blogs_and_writeups">blog</a>
@@ -256,7 +270,7 @@
         <section id="about_me">
             <div class="section-title">about_me</div>
             <h2>About Me</h2>
-            <p>Hi, I'm <strong>Ege Serter</strong>, a student at <strong>TÜBİTAK Fen Lisesi</strong>. I'm passionate
+            <p>Hi, I'm <strong>Ege Serter</strong>, a student at <strong>TÜBİTAK Science High School</strong>. I'm passionate
                 about <strong>Computer Science</strong>, <strong>Cybersecurity</strong>, and <strong>Competitive Programming</strong>.</p>
         </section>
 
