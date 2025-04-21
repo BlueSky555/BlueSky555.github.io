@@ -4,12 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/jpg">
+    <link rel="shortcut icon"
+        href="data:image/jpeg;base64,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"
+        type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>esger_portfolio</title>
     <style>
+        .theme-transition * {
+            transition: background-color 200ms ease, color 200ms ease;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -17,19 +28,28 @@
         body {
             margin: 0;
             font-family: 'Jetbrains Mono', 'Courier New', Courier, monospace;
-            background-color: #0e1219;
-            color: #ffffff;
+            --text-color: white;
+            --background-color: #0e1219;
+            --gray: #2f363d;
+            color: var(--text-color);
+            background-color: var(--background-color);
             line-height: 1.8;
-            --accent_rgb: 100, 255, 255;
+            --accent_rgb: 65, 175, 255;
             --accent: rgb(var(--accent_rgb));
             overflow-x: hidden;
             padding-top: 130px;
         }
 
+        body.light {
+            --text-color: black;
+            --background-color: #e7eefd;
+            --gray: #99a9b9;
+        }
+
         header {
-            background-color: #0d1117;
+            background-color: var(--background-color);
             padding: 20px 0;
-            border-bottom: 1px solid #2f363d;
+            border-bottom: 1px solid var(--gray);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -43,7 +63,7 @@
 
         header h1 {
             margin: 0;
-            color: #ffffff;
+            color: var(--text-color);
             font-size: 1.6rem;
             display: inline-flex;
             align-items: flex-end;
@@ -69,12 +89,12 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background-color: #2f363d;
+            background-color: var(--gray);
             border-radius: 8px;
         }
 
         ::-webkit-scrollbar-track {
-            background-color: #0d1117;
+            /*background-color: var(--background-color);*/
         }
 
 
@@ -85,7 +105,8 @@
                 opacity: 1;
             }
 
-            50%, 90% {
+            50%,
+            90% {
                 opacity: 0;
             }
         }
@@ -94,8 +115,8 @@
             display: flex;
             gap: 1.5rem;
             flex-wrap: wrap;
-            justify-content: center;
-            margin-right: 9vw;
+            align-items: center;
+            margin-right: 6vw;
         }
 
         nav a {
@@ -141,13 +162,17 @@
             transition: box-shadow 1s ease, transform 0.3s ease;
         }
 
+        body.light section {
+            background-color: rgba(var(--accent_rgb), 0.05);
+        }
+
         section:hover {
             transform: translateY(-4px);
         }
 
         h2 {
             font-size: 1.3rem;
-            color: #ffffff;
+            color: var(--text-color);
             margin-bottom: 1rem;
         }
 
@@ -167,11 +192,16 @@
         table,
         th,
         td {
-            border: 1px solid #2f363d;
+            border: 1px solid var(--gray);
         }
+
 
         th {
             background-color: #151c25;
+        }
+
+        body.light th {
+            background-color: #28344208;
         }
 
         th,
@@ -199,6 +229,99 @@
             margin-bottom: 0.75rem;
         }
 
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .skill-blob {
+            background-color: rgba(var(--accent_rgb), 0.15);
+            color: var(--accent);
+            padding: 0.4rem 1rem;
+            border-radius: 999px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            user-select: none;
+            -moz-user-select: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .skill-blob:hover {
+            background-color: rgba(var(--accent_rgb), 0.3);
+            transform: scale(1.03);
+        }
+
+        .intern-list li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .time-blob {
+            background-color: rgba(var(--accent_rgb), 0.05);
+            display: inline-block;
+            padding: 0.3rem 0.6rem;
+            text-wrap: nowrap;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+        .checkbox-label {
+            box-sizing: border-box;
+            background-color: #151f29;
+            width: 50px;
+            height: 26px;
+            border-radius: 50px;
+            position: relative;
+            padding: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .light .checkbox-label {
+            background-color: #d5dded;
+        }
+
+        .fa-moon {
+            color: #deb821;
+        }
+
+        .fa-sun {
+            color: #daaf02;
+        }
+
+        .checkbox-label .ball {
+            background-color: var(--gray);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            border-radius: 50%;
+        }
+        
+        .theme-transition .checkbox-label .ball {
+            transition: transform 0.2s linear;
+        }
+
+        .checkbox:checked+.checkbox-label .ball {
+            transform: translateX(24px);
+        }
+
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
@@ -206,9 +329,11 @@
             }
 
             nav {
-                margin-left: 9vw;
-                justify-content: flex-start;
+                justify-content: space-between;
+                gap: 0;
                 width: 100%;
+                padding: 0 2rem;
+                box-sizing: border-box;
             }
 
             main {
@@ -227,11 +352,15 @@
                 margin-bottom: 40px;
                 scroll-margin-top: 150px;
             }
+
+            .intern-list {
+                font-size: 0.7rem;
+            }
         }
     </style>
     <script>
-        let startColors = [70, 180, 255];
-        let endColors = [130, 120, 255];
+        let startColors = [65, 175, 255];
+        let endColors = [125, 115, 255];
         function lerp(s, e, r) {
             return s + (e - s) * r;
         }
@@ -246,13 +375,37 @@
             let el = document.documentElement;
             let scrollable = el.scrollHeight - window.innerHeight;
             let scrolledRatio = el.scrollTop / scrollable;
+            if(scrollable == 0) scrolledRatio = 0.5;
+
             let color = transition(scrolledRatio).join(", ");
 
             document.body.style.setProperty("--accent_rgb", color);
         }
-        window.onscroll = applyColor;
-        window.onload = applyColor;
+        window.addEventListener("scroll", applyColor);
+        window.addEventListener("DOMContentLoaded", applyColor);
         applyColor();
+    </script>
+
+    <script>
+        function updateTheme(dark) {
+            console.log(dark);
+            if(dark) {
+                document.body.classList.remove("light");
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.body.classList.add("light");
+                localStorage.setItem("theme", "light");
+            }
+        }
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector("#checkbox").onchange = e => {
+                updateTheme(e.target.checked);
+            };
+            let previousSetting = localStorage.getItem("theme");
+            if(previousSetting == "light") updateTheme(false), document.querySelector("#checkbox").checked = false;
+            
+            setTimeout(() => document.documentElement.classList.add("theme-transition"));
+        });
     </script>
 </head>
 
@@ -264,14 +417,47 @@
             <a href="#ctf_achievements">ctf</a>
             <a href="#cp_achievements">cp</a>
             <a href="#my_blogs_and_writeups">blog</a>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox" checked>
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
         </nav>
     </header>
     <main>
         <section id="about_me">
             <div class="section-title">about_me</div>
             <h2>About Me</h2>
-            <p>Hi, I'm <strong>Ege Serter</strong>, a student at <strong>TÜBİTAK Science High School</strong>. I'm passionate
-                about <strong>Computer Science</strong>, <strong>Cybersecurity</strong>, and <strong>Competitive Programming</strong>.</p>
+            <p>Hi, I'm <strong>Ege Serter</strong>, a student at <strong>TÜBİTAK Science High School</strong>. I'm
+                passionate
+                about <strong>Computer Science</strong>, <strong>Cyber Security</strong>, and <strong>Competitive
+                    Programming</strong>.</p>
+        </section>
+
+        <section id="skills">
+            <div class="section-title">experience</div>
+            <h2>Experience</h2>
+            <div class="skills-container">
+                <div class="skill-blob">Web</div>
+                <div class="skill-blob">C++</div>
+                <div class="skill-blob">Express.js</div>
+                <div class="skill-blob">Burp Suite</div>
+                <div class="skill-blob">SQL</div>
+                <div class="skill-blob">Data Structures</div>
+                <div class="skill-blob">Graphs</div>
+            </div>
+            <ul class="intern-list">
+                <li>
+                    <div class="time-blob">2023-2024</div> Intern at the Turkish National Research Institute of Electronics
+                    and Cryptology
+                </li>
+                <li>
+                    <div class="time-blob">2024-Now&nbsp;</div> Intern at TÜBİTAK BİLGEM Cyber Security Institute
+                </li>
+            </ul>
         </section>
 
         <section id="ctf_achievements">
@@ -322,7 +508,23 @@
             <div class="section-title">my_blogs_and_writeups</div>
             <h2>My Blogs and Writeups</h2>
             <ul>
-                <li><a href="https://medium.com/@esger/what-is-web-cache-poisoning-86f16c71e7af">What is Web Cache Poisoning?</a></li>
+                <li><a href="https://medium.com/@esger/what-is-web-cache-poisoning-86f16c71e7af">What is Web Cache
+                        Poisoning?</a></li>
+            </ul>
+        </section>
+
+        <section id="account_links">
+            <div class="section-title">my_accounts</div>
+            <h2>Find Me Online</h2>
+            <ul>
+                <li><a href="https://github.com/BlueSky555" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </li>
+                <li><a href="https://codeforces.com/profile/readyToFail" target="_blank"><i class="fas fa-code"></i>
+                        Codeforces</a></li>
+                <li><a href="https://ctftime.org/user/219846" target="_blank"><i class="fas fa-flag"></i> CTFtime</a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/ege-serter-a8092b304/" target="_blank"><i
+                            class="fab fa-linkedin"></i> LinkedIn</a></li>
             </ul>
         </section>
     </main>
