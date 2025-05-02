@@ -12,8 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
 
     <title>esger_portfolio</title>
     <style>
@@ -159,10 +158,12 @@
             border-radius: 0.5rem;
             background-color: #abd0fd05;
             transition: box-shadow 1s ease, transform 0.3s ease;
+            border: transparent 1px solid;
         }
 
         body.light section {
-            background-color: rgba(var(--accent_rgb), 0.05);
+            /*background-color: hsla(from var(--accent) h 70% l / 0.03);*/
+            border: hsla(from var(--gray) h s l / 0.5) 1px solid;
         }
 
         section:hover {
@@ -249,8 +250,14 @@
         }
 
         .skill-blob:hover {
-            background-color: rgba(var(--accent_rgb), 0.3);
+            background-color: rgba(var(--accent_rgb), 0.2);
             transform: scale(1.03);
+        }
+
+        .skill-list li::before {
+            content: ">";
+            color: var(--accent);
+            padding: 0 1rem 0 1rem;
         }
 
         .intern-list li {
@@ -261,13 +268,13 @@
         }
 
         .time-blob {
-            background-color: rgba(var(--accent_rgb), 0.05);
+            background-color: rgba(var(--accent_rgb), 0.1);
             display: inline-block;
-            padding: 0.3rem 0.6rem;
+            padding: 0.3rem 0.3rem;
             text-wrap: nowrap;
             text-align: center;
             border-radius: 4px;
-            font-weight: bold;
+            font-size: 0.7rem;
         }
 
         .checkbox {
@@ -292,7 +299,7 @@
         }
 
         .light .checkbox-label {
-            background-color: #d5dded;
+            background-color: #e9eef7;
         }
 
         .fa-moon {
@@ -312,9 +319,13 @@
             top: 3px;
             border-radius: 50%;
         }
+
+        .light .checkbox-label .ball {
+            background-color: #c5d1dc;
+        }
         
         .theme-transition .checkbox-label .ball {
-            transition: transform 0.2s linear;
+            transition: transform 0.2s ease-out;
         }
 
         .checkbox:checked+.checkbox-label .ball {
@@ -359,7 +370,7 @@
     </style>
     <script>
         let startColors = [65, 175, 255];
-        let endColors = [125, 115, 255];
+        let endColors = [115, 125, 255];
         function lerp(s, e, r) {
             return s + (e - s) * r;
         }
@@ -448,14 +459,13 @@
                 <div class="skill-blob">Data Structures</div>
                 <div class="skill-blob">Graphs</div>
             </div>
+            <ul class="skill-list">
+                <li>Ranked Expert in Codeforces.</li>
+                <li>Team Berjer Koltuk ranked #1 among high school students in Turkey.</li>
+                <li>Intern at the Turkish National Research Institute of Electronics and Cryptology <div class="time-blob">2023-2024</div></li>
+                <li>Intern at TÜBİTAK BİLGEM Cyber Security Institute <div class="time-blob">2024-Now</div></li>
+            </ul>
             <ul class="intern-list">
-                <li>
-                    <div class="time-blob">2023-2024</div> Intern at the Turkish National Research Institute of Electronics
-                    and Cryptology
-                </li>
-                <li>
-                    <div class="time-blob">2024-Now&nbsp;</div> Intern at TÜBİTAK BİLGEM Cyber Security Institute
-                </li>
             </ul>
         </section>
 
